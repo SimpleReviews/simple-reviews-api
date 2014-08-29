@@ -8,6 +8,6 @@ gem 'rails-api'
 gem 'sqlite3', group: :development
 gem 'pg', group: :production
 
-gem 'active_model_serializers'
+gem 'active_model_serializers', '0.8.0'
 
 gem 'puma'
