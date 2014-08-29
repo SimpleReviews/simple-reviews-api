@@ -1,7 +1,20 @@
-# This file should contain all the record creation needed to seed the database with its default values.
-# The data can then be loaded with the rake db:seed (or created alongside the db with db:setup).
-#
-# Examples:
-#
-#   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
-#   Mayor.create(name: 'Emanuel', city: cities.first)
+category = Category.where(
+  name: 'Wearables'
+).first_or_create
+
+product = Product.where(
+  name: 'Fitbit',
+  category: category
+).first_or_create
+
+review = Review.where(
+  body: 'Keeps me in shape',
+  review_type: 'positive',
+  product: product
+).first_or_create
+
+review = Review.where(
+  body: 'Android app sucks',
+  review_type: 'negative',
+  product: product
+).first_or_create
