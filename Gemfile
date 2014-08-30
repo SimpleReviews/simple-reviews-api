@@ -11,3 +11,5 @@ gem 'pg', group: :production
 gem 'active_model_serializers', '0.8.0'
 
 gem 'puma'
+
+gem 'rack-cors', :require => 'rack/cors'
