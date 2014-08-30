@@ -17,3 +17,5 @@ gem 'rack-cors', :require => 'rack/cors'
 gem 'semantics3'
 
 gem 'instagram'
+
+gem 'youtube_it'
