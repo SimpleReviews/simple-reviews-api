@@ -11,7 +11,7 @@ class Semantics3Controller < ApplicationController
     sem3.products_field('name', params[:q])
     productsHash = sem3.get_products
 
-    render json: {:semantics3 => productsHash['results']}.to_json
+    render json: productsHash['results']
   end
 
 end
