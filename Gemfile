@@ -15,3 +15,5 @@ gem 'puma'
 gem 'rack-cors', :require => 'rack/cors'
 
 gem 'semantics3'
+
+gem 'instagram'
