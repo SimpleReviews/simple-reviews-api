@@ -10,13 +10,13 @@ class InstagramController < ApplicationController
   def tags
     client = Instagram.client({})
     tags = client.tag_search(params[:q])
-    render json: tags
+    render json: {:tags => tags}
   end
 
   def recent_media
     client = Instagram.client({})
     recent_media = client.tag_recent_media(params[:name], {:count => 10})
-    render json: recent_media
+    render json: {:photos => recent_media}
   end
 
 end
