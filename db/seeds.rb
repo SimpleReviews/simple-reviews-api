@@ -4,7 +4,8 @@ category = Category.where(
 
 product = Product.where(
   name: 'Fitbit',
-  category: category
+  category: category,
+  instagram_tag: 'fitbit'
 ).first_or_create
 
 review = Review.where(
