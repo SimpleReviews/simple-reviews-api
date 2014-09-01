@@ -144,6 +144,7 @@ DEPENDENCIES
   rails (= 4.1.4)
   rails-api
   rails_12factor
+  rake
   semantics3
   sqlite3
   youtube_it
