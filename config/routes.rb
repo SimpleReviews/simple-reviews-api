@@ -1,4 +1,8 @@
 Rails.application.routes.draw do
+  get '/session' => 'users#show'
+  post '/signup' => 'users#create'
+  post '/signin' => 'session#create'
+
   get '/semantics3/search' => 'semantics3#search'
   get '/instagram/tags' => 'instagram#tags'
   get '/instagram/recent' => 'instagram#recent_media'

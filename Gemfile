@@ -19,3 +19,7 @@ gem 'semantics3'
 gem 'instagram'
 
 gem 'youtube_it'
+
+gem 'bcrypt', '~> 3.1.7'
+
+gem 'jwt'

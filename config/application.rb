@@ -37,5 +37,7 @@ module SimpleReviewsApi
     end
 
     config.api_only = false
+
+    config.autoload_paths += %W(#{config.root}/lib)
   end
 end
