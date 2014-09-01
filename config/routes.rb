@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :likes, except: [:new, :edit]
   get '/session' => 'users#show'
   post '/signup' => 'users#create'
   post '/signin' => 'session#create'

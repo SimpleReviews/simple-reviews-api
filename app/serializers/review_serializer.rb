@@ -3,4 +3,6 @@ class ReviewSerializer < ActiveModel::Serializer
 
   has_one :user, embed: :id, include: true
   has_one :product, embed: :id
+
+  has_many :likes, embed: :ids, include: true
 end
