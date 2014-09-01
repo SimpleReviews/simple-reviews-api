@@ -23,3 +23,5 @@ gem 'youtube_it'
 gem 'bcrypt', '~> 3.1.7'
 
 gem 'jwt'
+
+gem 'rails_12factor'
