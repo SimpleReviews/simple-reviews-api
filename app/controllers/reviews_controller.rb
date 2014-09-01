@@ -47,4 +47,15 @@ class ReviewsController < ApplicationController
 
     head :no_content
   end
+
+  private
+
+  def review_params
+    params.require(:review).permit(
+      :body,
+      :review_type,
+      :product_id,
+      :user_id
+    )
+  end
 end
