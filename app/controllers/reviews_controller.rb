@@ -18,7 +18,7 @@ class ReviewsController < ApplicationController
   # POST /reviews
   # POST /reviews.json
   def create
-    @review = Review.new(params[:review])
+    @review = Review.new(review_params)
 
     if @review.save
       render json: @review, status: :created, location: @review
@@ -32,7 +32,7 @@ class ReviewsController < ApplicationController
   def update
     @review = Review.find(params[:id])
 
-    if @review.update(params[:review])
+    if @review.update(review_params)
       head :no_content
     else
       render json: @review.errors, status: :unprocessable_entity
