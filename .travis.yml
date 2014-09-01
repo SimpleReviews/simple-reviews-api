@@ -1,0 +1,13 @@
+language: ruby
+rvm:
+- 2.1.2
+deploy:
+  provider: heroku
+  api_key:
+    secure: KJLFar21N5btKrb6RNU2WfxHskuYYU+PY3vddt3Gh+h3bwyMEXxN9+ABkxh/FjbmIZkqrZwhxZHfklcbEY+n98hiXaIm3V3XxzNcTu2NNJP/l9SRjFt0o8rxzrkP738tLgUN2Zf/51sXcg8ZdZQrgzculqPsOUhrfA0L7NA/KBc=
+  app: simple-reviews-api
+  on:
+    repo: SimpleReviews/simple-reviews-api
+  run:
+    - "bin/rake db:migrate"
+    - restart
